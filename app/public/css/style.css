@@ -39,4 +39,27 @@ body {
   transform: scale(0.98);
 }
 
+.name {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #697353;
+  font-size: 60px;
+  margin: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.survey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9BA685;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  padding: 8px 20px;
+  margin: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -13,6 +13,7 @@ body{
     line-height: 1.6;
 }
 
+// Home Page
 .container{
     display: flex;
     justify-content: center;
@@ -40,3 +41,28 @@ body{
       transform: scale(.98);
     }
   }
+
+//   Survey Page
+
+.name{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #697353;
+    font-size: 60px;
+    margin: 20px;
+    padding: 20px;
+    color:$font-color;
+}
+
+.survey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9BA685;
+    font-size: 60px;
+    color: $font-color;
+    text-align: center;
+    padding: 8px 20px;
+    margin: 20px;
+}
