@@ -29,5 +29,8 @@ module.exports = function (app){
       friendsData.push(newFriend);
       res.json(friendsData);
 
+
+      // Send a request/response to match the newFriend with friends the friendsData
+
     });
 };
