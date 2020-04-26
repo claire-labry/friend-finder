@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
     
     <title>Survey</title>
 </head>
 <body>
-
+<form role = 'form' id = 'survey' action= '/api/friends' method = 'POST'>
 <header class="showcase">
     <div class="survey-container">
         <div class="name">
@@ -19,12 +19,13 @@
               <h4>Link a Photo of You</h4>
               <input type="text" id="photo" class="form-control">
         </div>
-
+</header>
+       
         <div class="survey">
                             <!--QUESTION ONE-->
 
                             <div class = "survey-questions text-center">
-                                <p class = "q">I love large parties. </p>
+                                <p class = "q" label = 'q0'>I love large parties. </p>
                                 <select class = 'select'>
                                     <option></option>
                                     <option value='1'>1 [Strongly Disagree]</option>
@@ -37,7 +38,7 @@
                             <!--QUESTION TWO-->
         
                             <div class = "survey-questions text-center">
-                                <p class = "q">I'm always busy.</p>
+                                <p class = "q" label = 'q1'>I'm always busy.</p>
                                 <select class = 'select'>
                                     <option></option>
                                     <option value='1'>1 [Strongly Disagree]</option>
@@ -50,7 +51,7 @@
                             <!--QUESTION THREE-->
         
                             <div class = "survey-questions text-center">
-                                <p class = "q">I like to solve complex problems.<p>
+                                <p class = "q" label = 'q2'>I like to solve complex problems.<p>
                                     <select class = 'select'>
                                         <option></option>
                                         <option value='1'>1 [Strongly Disagree]</option>
@@ -64,7 +65,7 @@
                             <!--QUESTION FOUR-->
         
                             <div class = "survey-questions text-center">
-                                <p class = "q">I make people feel welcome.</p>
+                                <p class = "q" label = 'q3'>I make people feel welcome.</p>
                                 <select class = 'select'>
                                     <option></option>
                                     <option value='1'>1 [Strongly Disagree]</option>
@@ -77,7 +78,7 @@
                             <!--QUESTION FIVE-->
         
                             <div class = "survey-questions text-center">
-                                <p class = "q">I go straight for the goal.</p>
+                                <p class = "q" label = 'q4'>I go straight for the goal.</p>
                                 <select class = 'select'>
                                     <option></option>
                                     <option value='1'>1 [Strongly Disagree]</option>
@@ -90,7 +91,7 @@
                             <!--QUESTION SIX-->
         
                             <div class = "survey-questions text-center">
-                                <p class = "q">I avoid mistakes.</p>
+                                <p class = "q" label = 'q5'>I avoid mistakes.</p>
                                 <select class = 'select'>
                                     <option></option>
                                     <option value='1'>1 [Strongly Disagree]</option>
@@ -103,7 +104,7 @@
                             <!--QUESTION SEVEN-->
         
                             <div class = "survey-questions text-center">
-                                <p class = "q">I'm always on the go.</p>
+                                <p class = "q" label = 'q6'>I'm always on the go.</p>
                                 <select class = 'select'>
                                     <option></option>
                                     <option value='1'>1 [Strongly Disagree]</option>
@@ -116,7 +117,7 @@
                             <!--QUESTION EIGHT-->
         
                             <div class = "survey-questions text-center">
-                                <p class = "q">I seek adventure.</p>
+                                <p class = "q" label = 'q7'>I seek adventure.</p>
                                 <select class = 'select'>
                                     <option></option>
                                     <option value='1'>1 [Strongly Disagree]</option>
@@ -129,7 +130,7 @@
                             <!--QUESTION NINE-->
         
                             <div class = "survey-questions text-center">
-                                <p class = "q">I like to be tidy + organized.</p>
+                                <p class = "q" label = 'q8'>I like to be tidy + organized.</p>
                                 <select class = 'select'>
                                     <option></option>
                                     <option value='1'>1 [Strongly Disagree]</option>
@@ -142,7 +143,7 @@
                             <!--QUESTION TEN-->
         
                             <div class = "survey-questions text-center">
-                                <p class = "q">I love to daydream.</p>
+                                <p class = "q" label = 'q9'>I love to daydream.</p>
                                 <select class = 'select'>
                                     <option></option>
                                     <option value='1'>1 [Strongly Disagree]</option>
@@ -152,7 +153,8 @@
                                     <option value='5'>5 [Strongly Agree]</option>
                                 </select>
                             </div>
+                            <button type="submit" class="btn btn-primary submit">Submit</button>
     </div>
-</header>   
+</form>
 </body>
 </html>
