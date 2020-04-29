@@ -9,28 +9,34 @@ module.exports = function (app){
     });
 
     app.post('/api/friends', function (req, res){
-      
-      let newFriend = {
-        name: req.body.name,
-        photo: req.body.img,
-        scores: [
-          req.body.q0,
-          req.body.q1,
-          req.body.q2,
-          req.body.q3,
-          req.body.q4,
-          req.body.q5,
-          req.body.q6,
-          req.body.q7,
-          req.body.q8,
-          req.body.q9,
-        ]
+ 
+      var newFriend = req.body;
+
+      for(var i = 0; i < newFriend.scores.length; i++){
+        newFriend.scores[i] = parseInt(newFriend.scores[i])
       }
+
+      var matchIndex = 0;
+      var minDiff = 50;
+
+      for(var i = 0; friendsData.length; i++){
+        var totalDifference = 0; 
+
+        for(var j = 0; j < friendsData[i].scores.length; j++){
+          var difference = Math.abs(newFriend.scores[j] - friendsData[i].scores[j]);
+
+          totalDifference += difference;
+        }
+        
+        if(totalDifference < minDiff){
+          matchIndex = i;
+          minDiff = totalDifference;
+        }
+      }
+
       friendsData.push(newFriend);
-      res.json(friendsData);
 
-
-      // Send a request/response to match the newFriend with friends the friendsData
+      res.json(friendsData[matchIndex]);
 
     });
 };

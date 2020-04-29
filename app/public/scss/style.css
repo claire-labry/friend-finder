@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -7,14 +8,20 @@
 body {
   background-image: url(../images/friend_finder_home.jpg);
   background-size: 100%;
-  font-family: "Arapey", serif;
+  font-family: 'Arapey', serif;
   line-height: 1.6;
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 350px;
 }
 
@@ -35,15 +42,21 @@ body {
   text-decoration: none;
   color: white;
 }
+
 .btn-primary:hover {
-  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .name {
   width: 80%;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #697353;
   font-size: 20px;
   margin: 20px;
@@ -53,8 +66,12 @@ body {
 
 .survey {
   width: 80%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #9BA685;
   font-size: 20px;
   color: white;
@@ -92,7 +109,8 @@ body {
   margin: 20% auto;
   padding: 20px;
   width: 70%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .closeBtn {
@@ -106,5 +124,4 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-
 /*# sourceMappingURL=style.css.map */
