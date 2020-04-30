@@ -11,7 +11,7 @@ var PORT = process.env.PORT || 3000;
 // To enable Express to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use('/static', express.static('app/public'));
+app.use(express.static('app/public'));
 
 // Routes for Friend Finder
 

@@ -10,6 +10,19 @@ closeBtn.addEventListener('click', closeModal);
 
 window.addEventListener('click', clickOutside);
 
+function openModal(){
+    modal.style.display = 'block';
+} 
+
+function closeModal(){
+    modal.style.display = 'none';
+} 
+
+function clickOutside(e){
+    if(e.target == modal){
+        modal.style.display = 'none'; 
+    }
+}
 
 $('#modalBtn').on('click', function(e){
     event.preventDefault();
@@ -37,6 +50,7 @@ $('#modalBtn').on('click', function(e){
                 $('#q9').val(),
             ]
         };
+        console.log(user);
         
         var currentURL = window.location.origin;
         
@@ -44,21 +58,9 @@ $('#modalBtn').on('click', function(e){
             $('#newFriend').text(data.name);
             $('#newFriendPhoto').attr('src',data.photo);
             $('#surveyModal').modal('toggle');
+
         });
     } else {
         alert('Complete is Incomplete! Don\'t you want a new friend?')
-    }
-    function openModal(){
-        modal.style.display = 'block';
-    } 
-    
-    function closeModal(){
-        modal.style.display = 'none';
-    } 
-    
-    function clickOutside(e){
-        if(e.target == modal){
-            modal.style.display = 'none'; 
-        }
     }
 });
