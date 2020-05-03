@@ -17,15 +17,19 @@ module.exports = function (app){
       for(var i = 0; i < newFriend.scores.length; i++){
         newFriend.scores[i] = parseInt(newFriend.scores[i])
       }
-
+      
+      console.log(friendsData);
+     
       var matchIndex = 0;
       var minDiff = 50;
 
-      for(var i = 0; friendsData.length; i++){
+      for(var i = 0; i < friendsData.length; i++){
         var totalDifference = 0; 
 
+        console.log(friendsData[i]);
+
         for(var j = 0; j < friendsData[i].scores.length; j++){
-          var difference = Math.abs(newFriend.scores[j] - friendsData[i].scores[j]);
+          var difference = Math.abs(newFriend.scores[i] - friendsData[i].scores[j]);
 
           totalDifference += difference;
         }
@@ -38,7 +42,8 @@ module.exports = function (app){
 
       friendsData.push(newFriend);
 
+      console.log(friendsData[matchIndex]);
       res.json(friendsData[matchIndex]);
-
+      
     });
-};
+  };

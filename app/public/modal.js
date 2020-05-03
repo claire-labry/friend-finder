@@ -32,22 +32,21 @@ $('#modalBtn').on('click', function(e){
     if($('#fname').val() === '' || $('photo').val()=== ''){
         surveyValidation = false;
     } 
-    
     if(surveyValidation === true){
         var user = {
             name: $('#fname').val().trim(),
             photo: $('#photo').val().trim(),
             scores: [
-                $('#q0').val(),
-                $('#q1').val(),
-                $('#q2').val(),
-                $('#q3').val(),
-                $('#q4').val(),
-                $('#q5').val(),
-                $('#q6').val(),
-                $('#q7').val(),
-                $('#q8').val(),
-                $('#q9').val(),
+                $('#match0').val(),
+                $('#match1').val(),
+                $('#match2').val(),
+                $('#match3').val(),
+                $('#match4').val(),
+                $('#match5').val(),
+                $('#match6').val(),
+                $('#match7').val(),
+                $('#match8').val(),
+                $('#match9').val(),
             ]
         };
         console.log(user);
