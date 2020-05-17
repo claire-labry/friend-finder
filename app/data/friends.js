@@ -19,16 +19,16 @@ var friends = [
         'name': 'Charles',
         'photo': 'https://images.unsplash.com/photo-1566703410327-a4871d44b47e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
         'scores': [
-            5,
-            2,
             1,
             1,
             1,
-            3,
-            4,
             1,
             1,
-            4
+            1,
+            1,
+            1,
+            1,
+            1
         ]
     },
     {
