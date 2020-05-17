@@ -1,9 +1,9 @@
-var friends =[
+var friends = [
     {
         'name': 'Willis',
-        'photo': 'https://unsplash.com/photos/VJ7r5bUdlYI',
-        'scores':[ 
-            1, 
+        'photo': 'https://images.unsplash.com/photo-1558237316-d4762d4b8ce7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'scores': [
+            1,
             3,
             5,
             2,
@@ -17,8 +17,8 @@ var friends =[
     },
     {
         'name': 'Charles',
-        'photo': 'https://unsplash.com/photos/4v_HuMArJDY',
-        'scores':[
+        'photo': 'https://images.unsplash.com/photo-1566703410327-a4871d44b47e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
+        'scores': [
             5,
             2,
             1,
@@ -33,8 +33,8 @@ var friends =[
     },
     {
         'name': 'Frou Frou',
-        'photo': 'https://unsplash.com/photos/IivEbEd_vQ4',
-        'scores':[
+        'photo': 'https://images.unsplash.com/photo-1517955935808-4e2d8955d3af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+        'scores': [
             3,
             3,
             2,
@@ -49,8 +49,8 @@ var friends =[
     },
     {
         'name': 'Meerky',
-        'photo': 'https://unsplash.com/photos/ClrRTcXpYEw',
-        'scores':[
+        'photo': 'https://images.unsplash.com/photo-1523867432600-855fa29637d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+        'scores': [
             1,
             5,
             3,

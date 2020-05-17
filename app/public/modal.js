@@ -10,29 +10,29 @@ closeBtn.addEventListener('click', closeModal);
 
 window.addEventListener('click', clickOutside);
 
-function openModal(){
+function openModal() {
     modal.style.display = 'block';
-} 
+}
 
-function closeModal(){
+function closeModal() {
     modal.style.display = 'none';
-} 
+}
 
-function clickOutside(e){
-    if(e.target == modal){
-        modal.style.display = 'none'; 
+function clickOutside(e) {
+    if (e.target == modal) {
+        modal.style.display = 'none';
     }
 }
 
-$('#modalBtn').on('click', function(e){
+$('#modalBtn').on('click', function (e) {
     event.preventDefault();
-    
+
     var surveyValidation = true;
-    
-    if($('#fname').val() === '' || $('photo').val()=== ''){
+
+    if ($('#fname').val() === '' || $('photo').val() === '') {
         surveyValidation = false;
-    } 
-    if(surveyValidation === true){
+    }
+    if (surveyValidation === true) {
         var user = {
             name: $('#fname').val().trim(),
             photo: $('#photo').val().trim(),
@@ -49,15 +49,12 @@ $('#modalBtn').on('click', function(e){
                 $('#match9').val(),
             ]
         };
-        console.log(user);
-        
-        var currentURL = window.location.origin;
-        
-        $.post(currentURL + '/api/friends', user, function(data){
-            $('#newFriend').text(data.name);
-            $('#newFriendPhoto').attr('src',data.photo);
-            $('#surveyModal').modal('toggle');
 
+        var currentURL = window.location.origin;
+
+        $.post(currentURL + '/api/friends', user, function (data) {
+            $('#newFriend').text(data.name);
+            $('#newFriendPhoto').attr('src', data.photo);
         });
     } else {
         alert('Complete is Incomplete! Don\'t you want a new friend?')

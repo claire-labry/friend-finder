@@ -3,47 +3,44 @@ var friendsData = require('../data/friends.js');
 
 // Routes
 
-module.exports = function (app){
-    app.get('/api/friends', function(req,res){
-        res.json(friendsData);
-    });
+module.exports = function (app) {
+  app.get('/api/friends', function (req, res) {
+    res.json(friendsData);
+  });
 
-    app.post('/api/friends', function (req, res){
- 
-      var newFriend = req.body;
-      
-      console.log(newFriend);
+  app.post('/api/friends', function (req, res) {
 
-      for(var i = 0; i < newFriend.scores.length; i++){
-        newFriend.scores[i] = parseInt(newFriend.scores[i])
-      }
-      
-      console.log(friendsData);
-     
-      var matchIndex = 0;
-      var minDiff = 50;
+    var newFriend = req.body;
 
-      for(var i = 0; i < friendsData.length; i++){
-        var totalDifference = 0; 
 
-        console.log(friendsData[i]);
+    for (var i = 0; i < newFriend.scores.length; i++) {
+      newFriend.scores[i] = parseInt(newFriend.scores[i])
+    }
 
-        for(var j = 0; j < friendsData[i].scores.length; j++){
-          var difference = Math.abs(newFriend.scores[i] - friendsData[i].scores[j]);
 
-          totalDifference += difference;
-        }
-        
-        if(totalDifference < minDiff){
-          matchIndex = i;
-          minDiff = totalDifference;
-        }
+
+    var matchIndex = 0;
+    var minDiff = 50;
+
+    for (var i = 0; i < friendsData.length; i++) {
+      var totalDifference = 0;
+
+
+
+      for (var j = 0; j < friendsData[i].scores.length; j++) {
+        var difference = Math.abs(newFriend.scores[i] - friendsData[i].scores[j]);
+
+        totalDifference += difference;
       }
 
-      friendsData.push(newFriend);
+      if (totalDifference < minDiff) {
+        matchIndex = i;
+        minDiff = totalDifference;
+      }
+    }
 
-      console.log(friendsData[matchIndex]);
-      res.json(friendsData[matchIndex]);
-      
-    });
-  };
+    friendsData.push(newFriend);
+    res.json(friendsData[matchIndex]);
+
+  });
+};
