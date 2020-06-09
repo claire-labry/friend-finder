@@ -12,9 +12,7 @@
 </head>
 
 <body>
-
-    <header class="showcase">
-        <div class="survey-container">
+    <div class="container">
             <div class="name">
                 <h4>Name</h4>
                 <input type="text" id="fname" class="form-control">
@@ -22,13 +20,13 @@
                 <h4>Link a Photo of You</h4>
                 <input type="text" id="photo" class="form-control">
             </div>
-    </header>
-
-    <div class="survey">
-        <!--QUESTION ONE-->
-
-        <div class="survey-questions text-center">
-            <p class="q" id='q0'>I love large parties. </p>
+    </div>
+<div class="container">
+<div class="survey">
+            
+    <!--QUESTION ONE-->
+    <div class="survey-questions text-center">
+         <p class="q" id='q0'>I love large parties. </p>
             <select class='select' id='match0'>
                 <option></option>
                 <option value='1'>1 [Strongly Disagree]</option>
@@ -37,141 +35,131 @@
                 <option value='4'>4</option>
                 <option value='5'>5 [Strongly Agree]</option>
             </select>
-
-            <!--QUESTION TWO-->
-
-            <div class="survey-questions text-center">
-                <p class="q" id='q1'>I'm always busy.</p>
-                <select class='select' id='match1'>
-                    <option></option>
-                    <option value='1'>1 [Strongly Disagree]</option>
-                    <option value='2'>2</option>
-                    <option value='3'>3</option>
-                    <option value='4'>4</option>
-                    <option value='5'>5 [Strongly Agree]</option>
-                </select>
-
-                <!--QUESTION THREE-->
-
-                <div class="survey-questions text-center">
-                    <p class="q" id='q2'>I like to solve complex problems.
-                    <p>
-                        <select class='select' id='match2'>
-                            <option></option>
-                            <option value='1'>1 [Strongly Disagree]</option>
-                            <option value='2'>2</option>
-                            <option value='3'>3</option>
-                            <option value='4'>4</option>
-                            <option value='5'>5 [Strongly Agree]</option>
-                        </select>
-
-
-                        <!--QUESTION FOUR-->
-
-                    <div class="survey-questions text-center">
-                        <p class="q" id='q3'>I make people feel welcome.</p>
-                        <select class='select' id='match3'>
-                            <option></option>
-                            <option value='1'>1 [Strongly Disagree]</option>
-                            <option value='2'>2</option>
-                            <option value='3'>3</option>
-                            <option value='4'>4</option>
-                            <option value='5'>5 [Strongly Agree]</option>
-                        </select>
-
-                        <!--QUESTION FIVE-->
-
-                        <div class="survey-questions text-center">
-                            <p class="q" id='q4'>I go straight for the goal.</p>
-                            <select class='select' id='match4'>
-                                <option></option>
-                                <option value='1'>1 [Strongly Disagree]</option>
-                                <option value='2'>2</option>
-                                <option value='3'>3</option>
-                                <option value='4'>4</option>
-                                <option value='5'>5 [Strongly Agree]</option>
-                            </select>
-
-                            <!--QUESTION SIX-->
-
-                            <div class="survey-questions text-center">
-                                <p class="q" id='q5'>I avoid mistakes.</p>
-                                <select class='select' id='match5'>
-                                    <option></option>
-                                    <option value='1'>1 [Strongly Disagree]</option>
-                                    <option value='2'>2</option>
-                                    <option value='3'>3</option>
-                                    <option value='4'>4</option>
-                                    <option value='5'>5 [Strongly Agree]</option>
-                                </select>
-
-                                <!--QUESTION SEVEN-->
-
-                                <div class="survey-questions text-center">
-                                    <p class="q" id='q6'>I'm always on the go.</p>
-                                    <select class='select' id='match6'>
-                                        <option></option>
-                                        <option value='1'>1 [Strongly Disagree]</option>
-                                        <option value='2'>2</option>
-                                        <option value='3'>3</option>
-                                        <option value='4'>4</option>
-                                        <option value='5'>5 [Strongly Agree]</option>
-                                    </select>
-
-                                    <!--QUESTION EIGHT-->
-
-                                    <div class="survey-questions text-center">
-                                        <p class="q" id='q7'>I seek adventure.</p>
-                                        <select class='select' id='match7'>
-                                            <option></option>
-                                            <option value='1'>1 [Strongly Disagree]</option>
-                                            <option value='2'>2</option>
-                                            <option value='3'>3</option>
-                                            <option value='4'>4</option>
-                                            <option value='5'>5 [Strongly Agree]</option>
-                                        </select>
-
-                                        <!--QUESTION NINE-->
-
-                                        <div class="survey-questions text-center">
-                                            <p class="q" id='q8'>I like to be tidy + organized.</p>
-                                            <select class='select' id='match8'>
-                                                <option></option>
-                                                <option value='1'>1 [Strongly Disagree]</option>
-                                                <option value='2'>2</option>
-                                                <option value='3'>3</option>
-                                                <option value='4'>4</option>
-                                                <option value='5'>5 [Strongly Agree]</option>
-                                            </select>
-
-                                            <!--QUESTION TEN-->
-
-                                            <div class="survey-questions text-center">
-                                                <p class="q" id='q9'>I love to daydream.</p>
-                                                <select class='select' id='match9'>
-                                                    <option></option>
-                                                    <option value='1'>1 [Strongly Disagree]</option>
-                                                    <option value='2'>2</option>
-                                                    <option value='3'>3</option>
-                                                    <option value='4'>4</option>
-                                                    <option value='5'>5 [Strongly Agree]</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <button type='button' id='modalBtn' class="button">Submit</button>
-
-                                        <div id='surveyModal' class="modal">
-                                            <div class="modal-content">
-                                                <span class="closeBtn">&times;</span>
-                                                <h2>Here's Your Match!</h2>
-                                                <h2 id='newFriend'>Name: </h2>
-                                                <img id='newFriendPhoto' src=''>
-                                            </div>
-                                        </div>
-                                        <script src="https://code.jquery.com/jquery-3.5.0.min.js"
-                                            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-                                            crossorigin="anonymous"></script>
-                                        <script src='modal.js'></script>
+    
+    <!--QUESTION TWO-->
+    <div class="survey-questions text-center">
+        <p class="q" id='q1'>I'm always busy.</p>
+            <select class='select' id='match1'>
+                <option></option>
+                <option value='1'>1 [Strongly Disagree]</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 [Strongly Agree]</option>
+            </select>
+    
+    <!--QUESTION THREE-->
+    <div class="survey-questions text-center">
+        <p class="q" id='q2'>I like to solve complex problems.</p>
+            <select class='select' id='match2'>
+                <option></option>
+                <option value='1'>1 [Strongly Disagree]</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 [Strongly Agree]</option>
+            </select>
+    
+    
+    <!--QUESTION FOUR-->
+    <div class="survey-questions text-center">
+        <p class="q" id='q3'>I make people feel welcome.</p>
+            <select class='select' id='match3'>
+                <option></option>
+                <option value='1'>1 [Strongly Disagree]</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 [Strongly Agree]</option>
+            </select>
+    </div>
+    <!--QUESTION FIVE-->
+    <div class="survey-questions text-center">
+        <p class="q" id='q4'>I go straight for the goal.</p>
+            <select class='select' id='match4'>
+                <option></option>
+                <option value='1'>1 [Strongly Disagree]</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 [Strongly Agree]</option>
+            </select>
+    </div>
+     <!--QUESTION SIX-->
+    <div class="survey-questions text-center">
+        <p class="q" id='q5'>I avoid mistakes.</p>
+            <select class='select' id='match5'>
+                <option></option>
+                <option value='1'>1 [Strongly Disagree]</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 [Strongly Agree]</option>
+            </select>
+    </div>
+    <!--QUESTION SEVEN-->
+    <div class="survey-questions text-center">
+        <p class="q" id='q6'>I'm always on the go.</p>
+            <select class='select' id='match6'>
+                <option></option>
+                <option value='1'>1 [Strongly Disagree]</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 [Strongly Agree]</option>
+            </select>
+    </div>
+    <!--QUESTION EIGHT-->
+    <div class="survey-questions text-center">
+        <p class="q" id='q7'>I seek adventure.</p>
+            <select class='select' id='match7'>
+                <option></option>
+                <option value='1'>1 [Strongly Disagree]</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 [Strongly Agree]</option>
+            </select>
+    </div>
+    <!--QUESTION NINE-->
+   <div class="survey-questions text-center">
+        <p class="q" id='q8'>I like to be tidy + organized.</p>
+            <select class='select' id='match8'>
+                <option></option>
+                <option value='1'>1 [Strongly Disagree]</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 [Strongly Agree]</option>
+            </select>
+    </div>
+     <!--QUESTION TEN-->
+    <div class="survey-questions text-center">
+        <p class="q" id='q9'>I love to daydream.</p>
+            <select class='select' id='match9'>
+                <option></option>
+                <option value='1'>1 [Strongly Disagree]</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 [Strongly Agree]</option>
+            </select>
+    </div>
+                                        
+    <button type='button' id='modalBtn' class="button">Submit</button>
+        <div id='surveyModal' class="modal">
+            <div class="modal-content">
+                <span class="closeBtn">&times;</span>
+                    <h2>Here's Your Match!</h2>
+                    <h2 id='newFriend'>Name: </h2>
+                    <img id='newFriendPhoto' src=''>
+            </div>
+        </div>
+    </div>  
+</div>  
+                                
 </body>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="crossorigin="anonymous"></script>
+<script src='modal.js'></script>
 
 </html>
