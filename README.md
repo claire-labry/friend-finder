@@ -10,19 +10,19 @@ https://shrouded-peak-45485.herokuapp.com/
 
 You will need to take an ordinary survey of questions to allow Friend Finder to get to know you and pick the perfect match for you. Select a number that ranges between 1 through 5, 1 being the least and 5 being the strongest. Once you've finished your survey, a friend match will appear!
 
-- Home page that displays the buttons to the survey, API links, and Github Repo
+#### Home page that displays the buttons to the survey, API links, and Github Repo
 
 ![](app/public/images/home.png)
 
-- Parsed JSON that displays hardcoded friends data
+#### Parsed JSON that displays hardcoded friends data
 
 ![](app/public/images/jsondata.png)
 
-- Survey the user takes to get a new match and furry friend!
+#### Survey the user takes to get a new match and furry friend!
 
 ![](app/public/images/survey.png)
 
-- Results show an image + name of new furry friend in a modal after user fills out survey and clicks submit.
+#### Results show an image + name of new furry friend in a modal after user fills out survey and clicks submit.
 
 ![](app/public/images/match.png)
 
