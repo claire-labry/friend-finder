@@ -12,19 +12,19 @@ You will need to take an ordinary survey of questions to allow Friend Finder to 
 
 - Home page that displays the buttons to the survey, API links, and Github Repo
 
-![](public/images/home.png)
+![](app/public/images/home.png)
 
 - Parsed JSON that displays hardcoded friends data
 
-![](public/images/jsondata.png)
+![](app/public/images/jsondata.png)
 
 - Survey the user takes to get a new match and furry friend!
 
-![](public/images/survey.png)
+![](app/public/images/survey.png)
 
 - Results show an image + name of new furry friend in a modal after user fills out survey and clicks submit.
 
-![](public/images/match.png)
+![](app/public/images/match.png)
 
 ## Technologies Used
 
