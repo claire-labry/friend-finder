@@ -37,7 +37,8 @@ You will need to take an ordinary survey of questions to allow Friend Finder to 
 
 ## Code Logic
 
-- Use server.js to run the code in your terminal via Node.js
+- NPM install the packages
+- Use server.js to run the code in your terminal via Node.js, simply put 'nodemon' in the terminal.
   - This in result sets up and runs the Express.js server
 - Two HTML files are housed in the public folder that serve as the front-end section of the application (home.html and survey.html)
   - One Javascript file in the public folder serves the modal in which presents the friend match. (modal.js)
