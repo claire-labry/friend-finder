@@ -29,4 +29,5 @@ app.listen(PORT, function () {
 // Have user's photo show up next to new friend
 // hardcode more new friends to data for matching
 // Add 'Home' button to modal
+// Fix limited survey results to become more variable
 // Turn this app into a full MERN application
