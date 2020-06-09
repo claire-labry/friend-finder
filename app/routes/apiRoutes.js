@@ -9,26 +9,23 @@ module.exports = function (app) {
   });
 
   app.post('/api/friends', function (req, res) {
-
     var newFriend = req.body;
 
-
     for (var i = 0; i < newFriend.scores.length; i++) {
-      newFriend.scores[i] = parseInt(newFriend.scores[i])
+      newFriend.scores[i] = parseInt(newFriend.scores[i]);
     }
 
-
-
+    // Variables
     var matchIndex = 0;
     var minDiff = 50;
 
     for (var i = 0; i < friendsData.length; i++) {
       var totalDifference = 0;
 
-
-
       for (var j = 0; j < friendsData[i].scores.length; j++) {
-        var difference = Math.abs(newFriend.scores[i] - friendsData[i].scores[j]);
+        var difference = Math.abs(
+          newFriend.scores[i] - friendsData[i].scores[j]
+        );
 
         totalDifference += difference;
       }
@@ -41,6 +38,5 @@ module.exports = function (app) {
 
     friendsData.push(newFriend);
     res.json(friendsData[matchIndex]);
-
   });
 };
